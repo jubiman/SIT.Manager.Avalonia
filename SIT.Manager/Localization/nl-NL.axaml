@@ -1,0 +1,409 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+					xmlns:system="clr-namespace:System;assembly=System.Runtime"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- Play Page / View -->
+	<system:String x:Key="AddressBoxTitle">Addres</system:String>
+	<system:String x:Key="UsernameBoxTitle">Gebruikersnaam</system:String>
+	<system:String x:Key="PasswordBoxTitle">Wachtwoord</system:String>
+	<system:String x:Key="EnterUserNamePlaceholder">Voer gebruikersnaam in...</system:String>
+	<system:String x:Key="EnterPasswordPlaceholder">Voer wachtwoord in...</system:String>
+	<system:String x:Key="EnterServerAddressPlaceholder">Voer server addres in...</system:String>
+	<system:String x:Key="RememberMeCheckBoxTitle">Onthoud Mij</system:String>
+	<system:String x:Key="ConnectButtonTitle">Verbinden</system:String>
+	<system:String x:Key="StartServerAndConnectButtonTitleToolTip">Start de Aki server en verbind met de server</system:String>
+	<system:String x:Key="ConnectButtonTitleToolTip">Verbind met de server</system:String>
+
+	<!-- Play Page ViewModel -->
+	<system:String x:Key="PlayPageViewModelQuickPlayText">Start de Server en Verbind</system:String>
+	<system:String x:Key="PlayPageViewModelAccountNotFound">Account Niet Gevonden</system:String>
+	<system:String x:Key="PlayPageViewModelAccountNotFoundDescription">Uw account is niet gevonden, wilt u een nieuw account registreren met deze inloggegevens?</system:String>
+	<system:String x:Key="PlayPageViewModelButtonYes">Ja</system:String>
+	<system:String x:Key="PlayPageViewModelButtonOk">Ok</system:String>
+	<system:String x:Key="PlayPageViewModelButtonNo">Nee</system:String>
+	<system:String x:Key="PlayPageViewModelLoginErrorTitle">Login Error</system:String>
+	<system:String x:Key="PlayPageViewModelLoginErrorDescription">Kan niet communiceren met de server %1</system:String>
+	<system:String x:Key="PlayPageViewModelServerAddressTitle">Server Addres</system:String>
+	<system:String x:Key="PlayPageViewModelServerAddressDescription">Voer een correct server addres in en probeer het opnieuw</system:String>
+	<system:String x:Key="PlayPageViewModelInstallPathTitle">Installatielocatie</system:String>
+	<system:String x:Key="PlayPageViewModelInstallPathDescription">'Installatielocatie' is niet geconfigureerd. Ga naar de instellingen en configureer de installatielocatie.</system:String>
+	<system:String x:Key="PlayPageViewModelSITInstallationTitle">SIT Installatie</system:String>
+	<system:String x:Key="PlayPageViewModelSITInstallationDescription">Kan '%1' niet vinden. Installeer SIT voordat u verbinding maakt.</system:String>
+	<system:String x:Key="PlayPageViewModelEFTInstallationTitle">EFT Installatie</system:String>
+	<system:String x:Key="PlayPageViewModelEFTInstallationDescription">Kan '%1' niet vinden in de installatielocatie.</system:String>
+	<system:String x:Key="PlayPageViewModelInputValidationTitle">Input Validatie</system:String>
+	<system:String x:Key="PlayPageViewModelInputValidationDescription">Ontbrekend invoerveld.</system:String>
+	<system:String x:Key="PlayPageViewModelUnhandledAkiInstanceTitle">Onafgehandelde Aki-instantie</system:String> <!-- for a lack of a better translation -->
+	<system:String x:Key="PlayPageViewModelUnhandledAkiInstanceDescription">SPT-AKI is momenteel actief. Sluit alle actieve instanties van SPT-AKI.</system:String>
+	<system:String x:Key="PlayPageViewModelMissingAKIInstallationTitle">De AKI Installatie ontbreekt</system:String>
+	<system:String x:Key="PlayPageViewModelMissingAKIInstallationDescription">SPT-AKI server executable mist.</system:String>
+	<system:String x:Key="PlayPageViewModelWaitingForServerTitle">Wachten op server</system:String>
+	<system:String x:Key="PlayPageViewModelServerErrorTitle">Server Error</system:String>
+	<system:String x:Key="PlayPageViewModelServerErrorDescription">De server is nooit opgestart! Controleer de logs voor meer informatie.</system:String>
+	<system:String x:Key="PlayPageViewModelLoginIncorrectPassword">Incorrect wachtwoord</system:String>
+	
+	<!-- Pane View (Menu on the left also tooltip about update on top) -->
+	<system:String x:Key="UpdateNotification">Een update voor de SIT Manager is beschikbaar klik hier om te updaten:</system:String>
+	<system:String x:Key="UpdateButtonTitle">Update</system:String>
+	<system:String x:Key="SetupTitle">Installatie</system:String>
+	<system:String x:Key="InstallPathErrorNotification">Client installatieloactie is niet geconfigureerd. Ga naar instellingen om de launcher te configureren.</system:String>
+	<system:String x:Key="PlayTitle">Speel</system:String>
+	<system:String x:Key="InstallTitle">Installeer</system:String>
+	<system:String x:Key="ToolsTitle">Tools</system:String>
+	<system:String x:Key="ServerTitle">Server</system:String>
+	<system:String x:Key="ModsTitle">Mods</system:String>
+	<system:String x:Key="SettingsTitle">Instellingen</system:String>
+	<system:String x:Key="PlayTitleToolTip">Connect en speel.</system:String>
+	<system:String x:Key="InstallTitleToolTip">Installeer/Update SIT en SIT Server</system:String>
+	<system:String x:Key="ToolsTitleToolTip">Tools om SIT and Tarkov te beheren.</system:String>
+	<system:String x:Key="ServerTitleToolTip">Server beheer.</system:String>
+	<system:String x:Key="ModsTitleToolTip">Mod beheer.</system:String>
+	
+	<!-- Mods Page -->
+	<system:String x:Key="ModsWarningTitle">WAARSCHUWING</system:String>
+	<system:String x:Key="ModsWarningDescription">Het gebruik van mods kan de stabiliteit van uw spel beïnvloeden en ervoor zorgen dat het crasht of niet goed werkt. Hoewel mods uw game-ervaring kunnen verbeteren en nieuwe functies kunnen toevoegen, worden ze mogelijk niet officieel ondersteund door SIT of getest op compatibiliteit. Installeer mods op eigen risico en maak altijd back-upkopieën van uw gamebestanden voordat u wijzigingen aanbrengt. Wij zijn niet aansprakelijk voor enige schade of verlies van voortgang veroorzaakt door de installatie van mods. Ga voorzichtig verder.</system:String>
+	<system:String x:Key="ModsWarningButtonTitle">Akkoord</system:String>
+	<system:String x:Key="ModsPageTitle">Mods</system:String>
+	<system:String x:Key="ModsDownloadCollectionButtonTitle">Download Collectie</system:String>
+	<system:String x:Key="ModsDownloadCollectionButtonToolTip">Download de nieuwste omgezette mod collectie.</system:String>
+	<system:String x:Key="ModInfoTitle">Mod Informatie</system:String>
+	<system:String x:Key="ModInfoNameTitle">Naam:</system:String>
+	<system:String x:Key="ModInfoAuthorTitle">Auteur:</system:String>
+	<system:String x:Key="ModInfoSupportedVersionTitle">Ondersteunde SIT-versie:</system:String>
+	<system:String x:Key="ModInfoModVersionTitle">Mod Versie:</system:String>
+	<system:String x:Key="ModInfoModPageTitle">Mod Pagina:</system:String>
+	<system:String x:Key="ModInfoExtraFilesToolTip">Als de omgezette mod extra bestanden vereist, click de link om ze te downloaden.</system:String>
+	<system:String x:Key="ModInfoRequiresExtraFilesTitle">Vereist Extra Bestanden</system:String>
+	<system:String x:Key="ModInfoDescription">Omschrijving:</system:String>
+	<system:String x:Key="ModInfoInstallToolTip">Installeer de mod.</system:String>
+	<system:String x:Key="ModInfoInstallTitle">Installeer</system:String>
+	<system:String x:Key="ModInfoUninstallToolTip">Oninstalleer de mod.</system:String>
+	<system:String x:Key="ModInfoUninstallTitle">Oninstalleer</system:String>
+	
+	<!-- Mods Page ViewModel -->
+	<system:String x:Key="ModsPageViewModelErrorTitle">Error</system:String>
+	<system:String x:Key="ModsPageViewModelErrorInstallPathDescription">Installatielocatie is niet ingesteld. Configureer het in de instellingen.</system:String>
+	<system:String x:Key="ModsPageViewModelErrorNoModsFound">Geen mods gevonden</system:String>
+	
+	<!-- Tools Page -->
+	<system:String x:Key="ToolsOpenEFTFolderButtonToolTip">Open de EFT installatie folder.</system:String>
+	<system:String x:Key="ToolsOpenEFTFolderButtonTitle">Open EFT Folder</system:String>
+	<system:String x:Key="ToolsOpenBepInExFolderButtonToolTip">Open de BepInEx Plugins folder.</system:String>
+	<system:String x:Key="ToolsOpenBepInExFolderButtonTitle">Open Plugins Folder</system:String>
+	<system:String x:Key="ToolsOpenSITConfigButtonToolTip">Open de SIT Config met de standaard text editor.</system:String>
+	<system:String x:Key="ToolsOpenSITConfigButtonTitle">Open SIT Config</system:String>
+	<system:String x:Key="ToolsOpenEFTLogButtonToolTip">Open de EFT 'Player.log' met de standaard text editor.</system:String>
+	<system:String x:Key="ToolsOpenEFTLogButtonTitle">Open EFT Log</system:String>
+	<system:String x:Key="ToolsOpenLocationEditorButtonToolTip">Opent de Locatie Editor GUI.</system:String>
+	<system:String x:Key="ToolsOpenLocationEditorButtonTitle">Locatie Editor</system:String>
+	<!-- <system:String x:Key="ToolsClearCacheButtonToolTip">Clears the local users EFT Cache.</system:String> -->
+	<system:String x:Key="ToolsClearCacheButtonToolTip">Leegt de lokale EFT Cache.</system:String>
+	<system:String x:Key="ToolsClearCacheButtonTitle">Leeg Cache</system:String>
+	<system:String x:Key="ToolsGenerateDiagnosticReportButtonTitle">Genereer Logs</system:String>
+	<system:String x:Key="ToolsClientLogCheckboxContent">Voeg EFT Logs toe</system:String>
+	<system:String x:Key="ToolsServerLogCheckboxContent">Voeg Server Logs toe</system:String>
+	<system:String x:Key="ToolsDiagnosticsLogCheckboxContent">Voeg Diagnostische Logs toe (Bevat Systeem Informatie!)</system:String>
+	<system:String x:Key="ToolsHttpJsonCheckboxContent">Voeg Http.json Bestand toe</system:String>
+	<system:String x:Key="ToolsSelectLogsTitle">Selecteer welke logs je wilt toevoegen</system:String>
+	<system:String x:Key="ToolsSelectLogsProceedButtonText">Genereer Log Bundel</system:String>
+	<system:String x:Key="ToolsSelectLogsCloseButtonText">Annuleren</system:String>
+	<system:String x:Key="ToolsDiagnosticReportSaveFileTitle">Sla het zip bestand op</system:String>
+	
+	<!-- Server Page -->
+	<system:String x:Key="ServerConsoleOutputTitle">Console Output</system:String>
+	<system:String x:Key="ServerButtonStartToolTip">Start de server.</system:String>
+	<system:String x:Key="ServerEditServerConfig">Wijzig de Server Configuraatie</system:String>
+	<system:String x:Key="ServerEditServerConfigButtonToolTip">Edit Server</system:String>
+	<system:String x:Key="ServerClearServerOutputText">Verwijder Server Output</system:String>
+	<system:String x:Key="ServerClearServerOutputTooltip">Verwijdert de gehele output in de console.</system:String>
+
+	<!-- TODO: Translate from here -->
+	<!-- Settings Page -->
+	<system:String x:Key="SettingsLauncherSettingsTitle">Launcher Settings</system:String>
+	<system:String x:Key="SettingsCloseLauncherAfterGameLaunchTitle">Close Launcher After Game Launch</system:String>
+	<system:String x:Key="SettingsCloseLauncherAfterGameLaunchToolTip">Closes the launcher automatically after opening the game.</system:String>
+	<system:String x:Key="SettingsLookForUpdatesTitle">Look For Updates</system:String>
+	<system:String x:Key="SettingsLookForUpdatesTitleToolTip">Automatically look for updates when opening the launcher.</system:String>
+	<system:String x:Key="SettingsHideIpAddressTitle">Hide Ip Address</system:String>
+	<system:String x:Key="SettingsHideIpAddressToolTip">Hides the Ip Address with the star symbols in Ip Address Box.</system:String>
+	<system:String x:Key="SettingsEnableDeveloperMode">Enable Developer Mode</system:String>
+	<system:String x:Key="SettingsEnableDeveloperModeToolTip">Enables developer/test releases of SIT and SIT server for testing purposes</system:String>
+	<system:String x:Key="SettingsLanguageTitle">Language:</system:String>
+	<system:String x:Key="SettingsLanguageTitleToolTip">Translates entire launcher to your language, select one!</system:String>
+	<system:String x:Key="SettingsAccentColorTitle">Accent Color:</system:String>
+	<system:String x:Key="SettingsAccentColorToolTip">Changes color of selected visuals to your choice!</system:String>
+	<system:String x:Key="SettingsLinuxSettingsTitle">Linux Settings</system:String>
+	<system:String x:Key="SettingsLinuxWinePrefixTitle">Wine Prefix:</system:String>
+	<system:String x:Key="SettingsLinuxWinePrefixPlaceholder">Wine Prefix Path</system:String>
+	<system:String x:Key="SettingsLinuxWinePrefixToolTip">Change the WINEPREFIX used for EFT</system:String>
+	<system:String x:Key="SettingsLinuxWineRunnerTitle">Wine Runner:</system:String>
+	<system:String x:Key="SettingsLinuxWineRunnerPlaceholder">Wine Runner Path</system:String>
+	<system:String x:Key="SettingsLinuxWineRunnerToolTip">Set the wine runner used for EFT</system:String>
+	<system:String x:Key="SettingsEFTSettingsTitle">EFT Settings</system:String>
+	<system:String x:Key="SettingsEFTSettingsButtonChangeTitle">Change</system:String>
+	<system:String x:Key="SettingsEFTInstallPathTitle">EFT Path:</system:String>
+	<system:String x:Key="SettingsEFTInstallPathPlaceholder">EFT Install Path...</system:String>
+	<system:String x:Key="SettingsEFTChangeInstallPathToolTip">Change the EFT Install Path.</system:String>
+	<system:String x:Key="SettingsEFTVersionTitle">EFT Version:</system:String>
+	<system:String x:Key="SettingsSITVersionTitle">SIT Version:</system:String>
+	<system:String x:Key="SettingsSPTAKITitle">SPT-AKI Settings</system:String>
+	<system:String x:Key="SettingsSPTAKIPathTitle">SPT-AKI Path:</system:String>
+	<system:String x:Key="SettingsSPTAKIVersionTitle">SPT-AKI Version:</system:String>
+	<system:String x:Key="SettingsSITModVersionTitle">SIT Mod Version:</system:String>
+	<system:String x:Key="SettingsSPTAKIInstallPathPlaceholder">SPT-AKI Install Path...</system:String>
+	<system:String x:Key="SettingsSPTAKIInstallPathToolTip">Change the SPT-AKI Install Path.</system:String>
+	<system:String x:Key="SettingsServerConsoleTitle">Server Console</system:String>
+	<system:String x:Key="SettingsServerConsoleFontFamilyTitle">Font Family:</system:String>
+	<system:String x:Key="SettingsServerConsoleFontColorTitle">Font Color:</system:String>
+	<system:String x:Key="SettingsManagerVersionTitle">Manager Version:</system:String>
+	
+	<!-- Location Editor View -->
+	<system:String x:Key="LocationEditorLoadButtonTitle">Load</system:String>
+	<system:String x:Key="LocationEditorSaveButtonTitle">Save</system:String>
+	<system:String x:Key="LocationEditorLocationTitle">Location</system:String>
+	<system:String x:Key="LocationEditorLocationTextBoxPlaceholder">Click 'Load'</system:String>
+	<system:String x:Key="LocationEditorGeneralSettingsTitle">General Settings</system:String>
+	<system:String x:Key="LocationEditorBotMaxHeader">BotMax</system:String>
+	<system:String x:Key="LocationEditorBotMaxPlayerHeader">BotMaxPlayer</system:String>
+	<system:String x:Key="LocationEditorBotNormalHeader">BotNormal</system:String>
+	<system:String x:Key="LocationEditorBotSpawnTimeOffMaxHeader">BotSpawnTimeOffMax</system:String>
+	<system:String x:Key="LocationEditorBotSpawnTimeOffMinHeader">BotSpawnTimeOffMin</system:String>
+	<system:String x:Key="LocationEditorBotSpawnTimeOnMaxHeader">BotSpawnTimeOnMax</system:String>
+	<system:String x:Key="LocationEditorBotSpawnTimeOnMinHeader">BotSpawnTimeOnMin</system:String>
+	<system:String x:Key="LocationEditorBotStartHeader">BotStart</system:String>
+	<system:String x:Key="LocationEditorBotStopHeader">BotStop</system:String>
+	<system:String x:Key="LocationEditorBotSpawnCountStepHeader">BotSpawnCountStep</system:String>
+	<system:String x:Key="LocationEditorBotSpawnPeriodCheckHeader">BotSpawnPeriodCheck</system:String>
+	<system:String x:Key="LocationEditorBotMaxToolTip">Total max bots on the map allowed</system:String>
+	<system:String x:Key="LocationEditorBotMaxPlayerToolTip">Total max bots that are PMC</system:String>
+	<system:String x:Key="LocationEditorBotSpawnTimeOffMaxToolTip">Maximum spawn time in seconds when running offline</system:String>
+	<system:String x:Key="LocationEditorBotSpawnTimeOffMinToolTip">Minimum spawntime in seconds when running offline</system:String>
+	<system:String x:Key="LocationEditorBotSpawnTimeOnMaxToolTip">Maximum spawn time in seconds when running online</system:String>
+	<system:String x:Key="LocationEditorBotSpawnTimeOnMinToolTip">Minimum spawntime in seconds when running online</system:String>
+	<system:String x:Key="LocationEditorWavesSettingsTitle">Waves Settings</system:String>
+	<system:String x:Key="LocationEditorAddWaveButtonText">Add Wave</system:String>
+	<system:String x:Key="LocationEditorRemoveWaveButtonText">Remove Wave</system:String>
+	<system:String x:Key="LocationEditorSpawnWavesText">Spawn Waves</system:String>
+	<system:String x:Key="LocationEditorBotPresetText">BotPreset</system:String>
+	<system:String x:Key="LocationEditorBotPresetToolTip">Bot Difficulty</system:String>
+	<system:String x:Key="LocationEditorBotSideText">BotSide</system:String>
+	<system:String x:Key="LocationEditorBotSideToolTip">The side of the Bot</system:String>
+	<system:String x:Key="LocationEditorSpawnPointsText">SpawnPoints</system:String>
+	<system:String x:Key="LocationEditorWildSpawnTypeText">WildSpawnType</system:String>
+	<system:String x:Key="LocationEditorIsPlayersContent">isPlayers</system:String>
+	<system:String x:Key="LocationEditorIsPlayersToolTip">Needs to be checked for waves to work on >3.8</system:String>
+	<system:String x:Key="LocationEditorNumberHeader">number</system:String>
+	<system:String x:Key="LocationEditorNumberToolTip">The number of the wave (needs to be >0)</system:String>
+	<system:String x:Key="LocationEditorSlotsMaxHeader">slots_max</system:String>
+	<system:String x:Key="LocationEditorSlotsMaxToolTip">Max slots to spawn</system:String>
+	<system:String x:Key="LocationEditorSlotsMinHeader">slots_min</system:String>
+	<system:String x:Key="LocationEditorSlotsMinToolTip">Min slots to spawn</system:String>
+	<system:String x:Key="LocationEditorTimeMaxHeader">time_max</system:String>
+	<system:String x:Key="LocationEditorTimeMaxToolTip">Max time to spawn bot wave</system:String>
+	<system:String x:Key="LocationEditorTimeMinHeader">time_min</system:String>
+	<system:String x:Key="LocationEditorTimeMinToolTip">Min time to spawn bot wave</system:String>
+	<system:String x:Key="LocationEditorBossSettingsTitle">Boss Settings</system:String>
+	<system:String x:Key="LocationEditorAddBossButtonText">Add Boss</system:String>
+	<system:String x:Key="LocationEditorRemoveBossButtonText">Remove Boss</system:String>
+	<system:String x:Key="LocationEditorBossListText">Boss List</system:String>
+	<system:String x:Key="LocationEditorBossChanceHeader">BossChance</system:String>
+	<system:String x:Key="LocationEditorBossEscortAmountText">BossEscortAmount</system:String>
+	<system:String x:Key="LocationEditorBossEscortTypeText">BossEscortType</system:String>
+	<system:String x:Key="LocationEditorBossNameText">BossName</system:String>
+	<system:String x:Key="LocationEditorForceSpawnContent">ForceSpawn</system:String>
+	<system:String x:Key="LocationEditorIgnoreMaxBotsContent">IgnoreMaxBots</system:String>
+	<system:String x:Key="LocationEditorRandomTimeSpawnContent">RandomTimeSpawn</system:String>
+	
+	<!-- LocationEditor ViewModel -->
+	<system:String x:Key="LocationEditorViewModelLoadErrorTitle">Load Error</system:String>
+	<system:String x:Key="LocationEditorViewModelLoadErrorDescription">There was an error saving the file.</system:String>
+	<system:String x:Key="LocationEditorViewModelLoadLocationTitle">Load Location</system:String>
+	<system:String x:Key="LocationEditorViewModelLoadLocationDescription">Loaded location %1 successfully.</system:String>
+	<system:String x:Key="LocationEditorViewModelSaveErrorTitle">Save Error</system:String>
+	<system:String x:Key="LocationEditorViewModelSaveErrorDescription">There was an error saving the file.</system:String>
+	<system:String x:Key="LocationEditorViewModelSaveSuccessTitle">Save</system:String>
+	<system:String x:Key="LocationEditorViewModelSaveSuccessDescription">Successfully saved the file to: %1</system:String>
+	
+	<!-- Select Edition Dialog -->
+	<system:String x:Key="SelectEditionDialogTitle">Select Edition</system:String>
+	<system:String x:Key="SelectEditionDialogTextBlockTitle">Choose the Edition for your SIT account:</system:String>
+	<system:String x:Key="SelectEditionDialogButtonCreateTitle">Create</system:String>
+	
+	<!-- Tools Page ViewModel -->
+	<system:String x:Key="ToolsPageViewModelErrorMessageTitle">Error</system:String>
+	<system:String x:Key="ToolsPageViewModelErrorMessageDescription">Unable to fetch releases</system:String>
+	<system:String x:Key="ToolsPageViewModelErrorMessageConfigTitle">Config Error</system:String>
+	<system:String x:Key="ToolsPageViewModelErrorMessageConfigDescription">'Install Path' is not configured. Go to settings to configure the installation path.</system:String>
+	<system:String x:Key="ToolsPageViewModelErrorMessageConfigBepInExDescription">Could not find the given path. Is BepInEx installed? Path: %1</system:String>
+	<system:String x:Key="ToolsPageViewModelErrorMessageConfigSITDescription">Could not find '%1'. Make sure SIT is installed and that you have started the game once.</system:String>
+	<system:String x:Key="ToolsPageViewModelErrorMessageConfigLogDescription">Log file could not be found.</system:String>
+	<system:String x:Key="ToolsPageViewModelErrorMessageConfigButtonOk">Ok</system:String>
+	<system:String x:Key="ToolsPageViewModelErrorMessageConfigButtonCancel">Cancel</system:String>
+	<system:String x:Key="ToolsPageViewModelConfigClearEFTTitle">Clear Cache</system:String>
+	<system:String x:Key="ToolsPageViewModelConfigClearEFTDescription">Do you want to clear the EFT local cache or clear all cache?</system:String>
+	<system:String x:Key="ToolsPageViewModelConfigClearEFTCache">Clear EFT Local Cache</system:String>
+	<system:String x:Key="ToolsPageViewModelConfigClearAllCache">Clear All Cache</system:String>
+	<system:String x:Key="ToolsPageViewModelUnhandledExceptionError">An error occurred: %1</system:String>
+	
+	<!-- Settings Page ViewModel -->
+	<system:String x:Key="SettingsPageViewModelErrorTitle">Error</system:String>
+	<system:String x:Key="SettingsPageViewModelConfigTitle">Config</system:String>
+	<system:String x:Key="SettingsPageViewModelConfigErrorEFTDescription">The selected folder was invalid. Make sure it's a proper EFT game folder.</system:String>
+	<system:String x:Key="SettingsPageViewModelConfigInformationEFTDescription">EFT installation path set to '%1'</system:String>
+	<system:String x:Key="SettingsPageViewModelConfigInformationSPTAKIDescription">SPT-AKI installation path set to '%1'</system:String>
+	<system:String x:Key="SettingsPageViewModelConfigErrorSPTAKI">The selected folder was invalid. Make sure it's a proper SPT-AKI server folder.</system:String>
+	<system:String x:Key="SettingsPageViewModelEnableDevModeErrorTitle">Enable Developer Mod Failure</system:String>
+	<system:String x:Key="SettingsPageViewModelEnableDevModeErrorDescription">Can't enable developer mode as you have %1 incompatible mods still enabled</system:String>
+	<system:String x:Key="SettingsPageViewModelEnableDevModeErrorButtonOk">Ok</system:String>
+
+	<!-- Server Page ViewModel -->
+	<system:String x:Key="ServerPageViewModelStartingServer">Starting Server!</system:String>
+	<system:String x:Key="ServerPageViewModelServerStarted">Server started!</system:String>
+	<system:String x:Key="ServerPageViewModelServerStopped">Server stopped!</system:String>
+	<system:String x:Key="ServerPageViewModelStopServer">Stop Server</system:String>
+	<system:String x:Key="ServerPageViewModelStartServer">Start Server</system:String>
+	<system:String x:Key="ServerPageViewModelServerError">Server stopped unexpectedly! Check console for errors.</system:String>
+	<system:String x:Key="ServerPageViewModelSPTAkiRunning">SPT-AKI is currently running. Please close any running instance of SPT-AKI.</system:String>
+	<system:String x:Key="ServerPageViewModelSPTAkiNotFound">SPT-AKI not found. Please configure the SPT-AKI path in Settings tab before starting the server.</system:String>
+	<system:String x:Key="ServerPageViewModelStartingServerLog">Starting server...</system:String>
+	<system:String x:Key="ServerPageViewModelStoppingServerLog">Stopping server...</system:String>
+	<system:String x:Key="ServerPageViewModelClearServerOutputTitle">Clear Server Output</system:String>
+	<system:String x:Key="ServerPageViewModelClearServerOutputDescription">Do you wish to clear all text from the console output?</system:String>
+	<system:String x:Key="ServerPageViewModelClearServerOutputPrimary">Yes</system:String>
+	<system:String x:Key="ServerPageViewModelClearServerOutputSecondary">No</system:String>
+
+	<!-- Tarkov Client Service -->
+	<system:String x:Key="TarkovClientServiceCacheClearedTitle">Cache Cleared</system:String>
+	<system:String x:Key="TarkovClientServiceCacheClearedErrorTitle">Cache Clear Error</system:String>
+	<system:String x:Key="TarkovClientServiceCacheClearedDescription">Everything cleared successfully!</system:String>
+	<system:String x:Key="TarkovClientServiceCacheClearedErrorDescription">InstallPath not found in settings</system:String>
+	<system:String x:Key="TarkovClientServiceCacheClearedErrorEFTDescription">EFT local cache directory not found at: %1</system:String>
+	<system:String x:Key="TarkovClientServiceCacheClearedEFTDescription">EFT local cache cleared successfully!</system:String>
+
+	<!-- Mod Service -->
+	<system:String x:Key="ModServiceOutdatedDescription">You have %1 outdated mods. Would you like to automatically update them? Outdated Mods: %2</system:String>
+	<system:String x:Key="ModServiceOutdatedModsFoundTitle">Outdated Mods Found</system:String>
+	<system:String x:Key="ModServiceButtonNo">No</system:String>
+	<system:String x:Key="ModServiceButtonYes">Yes</system:String>
+	<system:String x:Key="ModServiceUpdatedModsTitle">Updated Mods</system:String>
+	<system:String x:Key="ModServiceUpdatedModsDescription">Updated %1 mods.</system:String>
+	<system:String x:Key="ModServiceInstallModTitle">Install Mod</system:String>
+	<system:String x:Key="ModServiceInstallErrorModDescription">Install Path is not set. Configure it in Settings.</system:String>
+	<system:String x:Key="ModServiceWarningTitle">Warning</system:String>
+	<system:String x:Key="ModServiceWarningDescription">The mod you are trying to install is not compatible with your currently installed version of SIT. Supported SIT Version: %1 Installed SIT Version: %2 Continue anyway?</system:String>
+	<system:String x:Key="ModServiceUnknownTitle">Unknown</system:String>
+	<system:String x:Key="ModServiceInstallModDescription">%1 was successfully installed.</system:String>
+	<system:String x:Key="ModServiceErrorInstallModDescription">%1 failed to install. Check your Launcher.log</system:String>
+	<system:String x:Key="ModServiceErrorUninstallModTitle">Error Uninstalling Mod</system:String>
+	<system:String x:Key="ModServiceErrorUninstallModDescription">A file was missing from the mod %1: '%2' Force remove the mod from the list of installed mods anyway?</system:String>
+	<system:String x:Key="ModServiceErrorExceptionUninstallModDescription">A file was missing from the mod %1: '%2' Force remove the mod from the list of installed mods anyway?</system:String>
+	<system:String x:Key="ModServiceErrorExceptionFileUninstallModDescription">A file was missing from the mod %1: '%2'</system:String>
+	<system:String x:Key="ModServiceFileUninstallModTitle">Uninstall Mod</system:String>
+	<system:String x:Key="ModServiceFileUninstallModDescription">%1 was successfully uninstalled.</system:String>
+
+	<!-- Install Service -->
+	<system:String x:Key="InstallServiceErrorTitle">Error</system:String>
+	<system:String x:Key="InstallServiceErrorInstallServerDescription">Please configure EFT Path in Settings.</system:String>
+	<system:String x:Key="InstallServiceErrorInstallSITDescription">EFT Path is not set. Configure it in Settings.</system:String>
+	<system:String x:Key="InstallServiceConfigTitle">Config</system:String>
+	<system:String x:Key="InstallServiceConfigDescription">Server installation path set to '%1'</system:String>
+	<system:String x:Key="InstallServiceInstallSuccessfulTitle">Install</system:String>
+	<system:String x:Key="InstallServiceInstallSuccessfulDescription">Installation of Server was successful.</system:String>
+	<system:String x:Key="InstallServiceInstallSITSuccessfulDescription">Installation of SIT was successful.</system:String>
+	<system:String x:Key="InstallerServiceNoDowngradePatcher">No downgrader is available for these versions of Tarkov.</system:String>
+	<system:String x:Key="InstallServiceSSLError">Your ISP is likely blocking our connection. Please use a VPN and try again.</system:String>
+	
+	<!-- File Service -->
+	<system:String x:Key="FileServiceProgressDownloading">Downloading '%1'</system:String>
+	<system:String x:Key="FileServiceProgressExtracting">Extracting file %1 (%2)</system:String>
+
+	<!-- Update Page -->
+	<system:String x:Key="UpdatePageUpdateButtonTitle">Start Update</system:String>
+	<system:String x:Key="UpdatePageUpdateInfoTextPt1">SIT Manager is updating for you please wait...</system:String>
+	<system:String x:Key="UpdatePageUpdateInfoTextPt2">The app restart as soon as it has finished</system:String>
+	<system:String x:Key="UpdatePageUpdatingTitle">Updating</system:String>
+	<system:String x:Key="UpdatePageErrorMessage">There was an issue trying to update SIT Manager please view the log for details</system:String>
+
+	<!-- Update Page View Model -->
+	<system:String x:Key="UpdatePageViewModelUpdateConfirmationTitle">Update Confirmation</system:String>
+	<system:String x:Key="UpdatePageViewModelUpdateConfirmationDescription">Are you sure you want to update? The manager will automatically restart once it has updated</system:String>
+	<system:String x:Key="UpdatePageViewModelButtonYes">Yes</system:String>
+	<system:String x:Key="UpdatePageViewModelButtonNo">No</system:String>
+
+	<!-- Install - Complete View -->
+	<system:String x:Key="CompleteViewInstallComplete">Install Completed</system:String>
+	<system:String x:Key="CompleteViewResetButtonTitle">Happy Playing</system:String>
+
+	<!-- Install - Configure View -->
+	<system:String x:Key="ConfigureViewStartInstallButtonTitle">Start Install</system:String>
+	<system:String x:Key="ConfigureViewBackButtonTitle">Back</system:String>
+	<system:String x:Key="ConfigureViewVersionSelectionGroupTitle">Version Selection</system:String>
+	<system:String x:Key="ConfigureViewPersonalizationOptions">Personalization and Import Options</system:String>
+	
+		<!-- Install - Configure Server View -->
+	<system:String x:Key="ConfigureServerViewSPTAKIInstallPathToolTip">Change the SPT-AKI Install Path.</system:String>
+	<system:String x:Key="ConfigureServerViewSPTAKIInstallPathTitle">Change</system:String>
+	<system:String x:Key="ConfigureServerViewSPTAKIInstallPathPlaceholder">SPT-AKI Install Path...</system:String>
+	<system:String x:Key="ConfigureServerViewSPTAKIPathTitle">SPT-AKI Path:</system:String>
+	<system:String x:Key="ConfigureServerViewSPTAKIPathWarningNoPath">No SPT-AKI install path specified</system:String>
+	<system:String x:Key="ConfigureServerViewVersionSelectionTitle">Version to install:</system:String>
+	
+	<!-- Install - Configure Sit View -->
+	<system:String x:Key="ConfigureSitViewLoadingVersionSelectionText">Working out available SIT versions please wait...</system:String>
+	<system:String x:Key="ConfigureSitViewEFTChangeInstallPathToolTip">Change the EFT Install Path.</system:String>
+	<system:String x:Key="ConfigureSitViewEFTSettingsButtonChangeTitle">Change</system:String>
+	<system:String x:Key="ConfigureSitViewEFTInstallPathPlaceholder">EFT Install Path...</system:String>
+	<system:String x:Key="ConfigureSitViewEFTInstallPathTitle">EFT Path:</system:String>
+	<system:String x:Key="ConfigureSitViewEFTPathWarningNoPath">Currently using the BSG EFT install location please install EFT to a different location to avoid any possible issues with SIT</system:String>
+	<system:String x:Key="ConfigureSitViewMirrorSelectionTitle">Select the mirror to use:</system:String>
+	<system:String x:Key="ConfigureSitViewVersionSelectionTitle">Version to install:</system:String>
+	<system:String x:Key="ConfigureSitViewRecommendedModsTitle">Recommended Mods</system:String>
+	<system:String x:Key="ConfigureSitViewRecommendedModsDescription">Choose from the available mods which we recommend you install alongside SIT</system:String>
+	<system:String x:Key="ConfigureSitViewEFTSettingsCheckboxTip">Import Live Game Graphic, Audio, and Control settings to SIT</system:String>
+	<system:String x:Key="ConfigureSitViewEFTSettingsCheckboxTitle">Import EFT Settings to SIT</system:String>
+
+	<!-- Install - Configure Sit View Model -->
+	<system:String x:Key="ConfigureSitViewModelLocationSelectionErrorTitle">Location Selection Error</system:String>
+	<system:String x:Key="ConfigureSitViewModelLocationSelectionErrorDescription">You've selected the same folder as the BSG install of EFT, please choose a different location to install SIT to</system:String>
+	<system:String x:Key="ConfigureSitViewModelLocationSelectionErrorOk">Ok</system:String>
+
+	<!-- Install - Install View -->
+	<system:String x:Key="InstallViewDownloadingTitle">Downloading</system:String>
+	<system:String x:Key="InstallViewExtractingTitle">Extracting</system:String>
+	<system:String x:Key="InstallViewInstallTitle">Install</system:String>
+	
+	<!-- Install - Patch View -->
+	<system:String x:Key="PatchViewSummaryMessage">Setting up your EFT instance so it's ready to install the requested SIT version</system:String>
+	<system:String x:Key="PatchViewCopyingTitle">Copying EFT Install</system:String>
+	<system:String x:Key="PatchViewDownloadingTitle">Downloading Patcher</system:String>
+	<system:String x:Key="PatchViewExtractingTitle">Extracting Patcher</system:String>
+	<system:String x:Key="PatchViewPatchingErrorMessage">Error trying to patch EFT consult the logs for details</system:String>
+	<system:String x:Key="PatchViewAquirePatcherErrorMessage">Error trying to aquire the patcher for EFT, please consult the logs for more details</system:String>
+	<system:String x:Key="PatchViewPatchingEndInstallButtonTitle">End Install</system:String>
+
+	<!-- Install - Select View -->
+	<system:String x:Key="SelectViewInstallServerButtonTitle">Install Server + SIT Mod</system:String>
+	<system:String x:Key="SelectViewInstallServerButtonToolTip">Download SPT Server + SIT Server Mod.</system:String>
+	<system:String x:Key="SelectViewServerModVersionTitle">SIT Mod Version:</system:String>
+	<system:String x:Key="SelectViewServerVersionTitle">SPT-AKI Version:</system:String>
+	<system:String x:Key="SelectViewSPTAKIPathTitle">SPT-AKI Path:</system:String>
+	<system:String x:Key="SelectViewSPTAKINoPathWarningMessage">Unable to find SPT-AKI install if you have already installed AKI-SPT please go to the Settings page and set the SPT-AKI install path. Otherwise you will be asked to provide an empty folder to install SPT-AKI to</system:String>
+	<system:String x:Key="SelectViewServerSectionHeading">SPT-AKI</system:String>
+	<system:String x:Key="SelectViewInstallSITButtonTitle">Install SIT</system:String>
+	<system:String x:Key="SelectViewInstallSITButtonToolTip">Downgrade EFT if needed, install SIT and mod support.</system:String>
+	<system:String x:Key="SelectViewUpdateSITButtonTitle">Update SIT</system:String>
+	<system:String x:Key="SelectViewUpdateSITButtonToolTip">Update SIT to the latest version available for your current EFT version</system:String>
+	<system:String x:Key="SelectViewSITVersionTitle">SIT Version:</system:String>
+	<system:String x:Key="SelectViewEFTVersionTitle">EFT Version:</system:String>
+	<system:String x:Key="SelectViewEFTPathTitle">EFT Path:</system:String>
+	<system:String x:Key="SelectViewEFTNoPathWarningMessage">Unable to find EFT install and/or version please go and set this manually in the Settings page</system:String>
+	<system:String x:Key="SelectViewEFTUsingBSGInstallWarningMessage">Detected BSG Escape From Tarkov install, if you have already installed SIT please go to the Settings page and change the EFT install path to this folder. Otherwise you will be asked to provide an empty folder to copy BSG EFT installation and install SIT to</system:String>
+	<system:String x:Key="SelectViewEFTSectionHeading">Escape From Tarkov</system:String>
+
+	<!-- Install - View Model -->
+	<system:String x:Key="InstallPageViewModelSelectText">Select</system:String>
+	<system:String x:Key="InstallPageViewModelConfigureText">Configure</system:String>
+	<system:String x:Key="InstallPageViewModelPatchText">Patch</system:String>
+	<system:String x:Key="InstallPageViewModelInstallText">Install</system:String>
+	<system:String x:Key="InstallPageViewModelCompleteText">Complete</system:String>
+	
+</ResourceDictionary>
